@@ -9,6 +9,7 @@ import { FaKeyboard } from "react-icons/fa6";
 import { MdInbox } from "react-icons/md";
 import { GoTag } from "react-icons/go";
 import { FaUserFriends } from "react-icons/fa";
+import Emails from "./Emails"
 const mailType=[
     {
         icons:<MdInbox/>,
@@ -65,6 +66,9 @@ function Inbox() {
                     </div>
                 })}
             </div>
+          </div>
+          <div>
+            <Emails/>
           </div>
         </div>
     )
