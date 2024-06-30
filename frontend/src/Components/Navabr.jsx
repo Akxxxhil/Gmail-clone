@@ -6,8 +6,10 @@ import { TbChartGridDots } from "react-icons/tb";
 import Avatar from 'react-avatar';
 import { IoSearch } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 function Navabr() {
+    const navigate=useNavigate("")
     return (
         <div>
 
@@ -19,8 +21,8 @@ function Navabr() {
                         <div className='hover:bg-gray-200 rounded-full p-2'>
                             <RxHamburgerMenu />
                         </div>
-                        <img className='w-8' src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png" alt="logo" />
-                        <h1 className='text-2xl font-medium text-gray-600'>Gmail</h1>
+                        <img onClick={()=>navigate("/")} className='w-8' src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png" alt="logo" />
+                        <h1 onClick={()=>navigate("/")} className='text-2xl font-medium text-gray-600'>Gmail</h1>
                     </div>
 
 

@@ -1,10 +1,15 @@
 import React from 'react'
 import { FaRegSquare } from "react-icons/fa6";
 import { TiStarOutline } from "react-icons/ti";
+import { useNavigate } from 'react-router-dom';
 
 function Email() {
+    const navigate=useNavigate("")
+    function mailDetails(){
+        navigate("/mailDetails/12")
+    }
     return (
-        <div className='flex px-4 py-3 items-center border-b border-gray-300 justify-between cursor-pointer'>
+        <div onClick={mailDetails} className='flex px-4 py-3 items-center border-b border-gray-300 justify-between cursor-pointer hover:shadow-md hover:border-gray-200 hover:border-1'>
             <div className='flex gap-3 items-center'>
                 <div>
                     <FaRegSquare />
